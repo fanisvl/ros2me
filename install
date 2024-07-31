@@ -36,6 +36,7 @@ if [ $ARCH != "x86_64" ] && [ $ARCH != "aarch64" ]
         exit
 fi
 
+ROSDISTRO=foxy
 RELEASE_FILE=$ROSDISTRO$ARCH
 
 # Add the ROS 2 apt repository
