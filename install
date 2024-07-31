@@ -76,13 +76,3 @@ echo ""
 echo "Set up your environment by sourcing the following file."
 echo "source /opt/ros/$ROSDISTRO/setup.bash"
 echo ""
-
-echo -n "Or do you want to save this on your .bashrc (y/n)? "
-read answer
-
-if [ "$answer" != "${answer#[Yy]}" ] ;
-    then
-        echo "source /opt/ros/$ROSDISTRO/setup.bash" >> $HOME/.bashrc
-fi
-
-echo "To start using ROS2, run: source $HOME/.bashrc"
